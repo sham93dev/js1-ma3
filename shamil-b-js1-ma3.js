@@ -66,7 +66,14 @@ container.removeChild(button);
 // Create an li element with a text value of Parrots and a class of parrots.
 // Add the new item as the second item in the ul below (add it after Cows).
 
+const animals = document.querySelector(".animals");
+const cows = document.querySelector(".cows");
 
+const li = document.createElement("li");
+li.className = "parrots"
+li.innerText = "Parrots";
+
+cows.after(li);
 
 // Question 7
 // Make a call to the URL below and pass the JSON it returns to a function.
